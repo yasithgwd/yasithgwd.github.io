@@ -8,11 +8,13 @@
 }
 
 *{ box-sizing: border-box; }
-html,body{ height:100%; }
+html,body{ 
+  height:100%; 
+}
+
 body{
   margin:0;
   color:var(--text);
-  background:#fff;
   font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   text-rendering:optimizeLegibility;
   -webkit-font-smoothing:antialiased;
@@ -20,16 +22,14 @@ body{
 }
 
 /* top nav */
-.topbar{
-  background:#fff;
-}
+
 .nav{
   max-width:var(--maxw);
   margin:0 auto;
   padding:14px 20px;
   display:flex;
   justify-content:flex-end;
-  gap:22px;
+  gap:25px;
   border-bottom:1px solid var(--border);
 }
 .nav-link{
@@ -156,4 +156,8 @@ a{
 
 .archieve-p{
   color: var(--muted);
+}
+
+.archieve-link{
+  color: var(--text);
 }

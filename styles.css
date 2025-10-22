@@ -1,15 +1,16 @@
 
 :root{
-  --text: #222;
+  --text: #ffffff;
   --muted: #6b7280;
-  --link: #1a73e8;
-  --border: rgba(0,0,0,.06);
+  --link: #1EB980;
+  --border: rgb(255, 255, 255);
   --maxw: 680px;
 }
 
 *{ box-sizing: border-box; }
 html,body{ 
   height:100%; 
+  background-color: black;
 }
 
 body{
@@ -96,7 +97,7 @@ a{
 
 /* footer */
 .footer{
-  border-top:1px solid var(--border);
+  
   margin-top:40px;
   padding-top:18px;
   text-align:center;
@@ -123,7 +124,7 @@ a{
   content:"";
   position:absolute;
   left:10px;
-  top:10px;
+  top:12px;
   bottom:-10px;
   width:1px;
   background:var(--border);
@@ -136,9 +137,9 @@ a{
     content: "";
     position: absolute;
     left: -15px;
-    top: 12px;
+    top: -15px;
     width: 3px;
-    height: 38px;
+    height: 36px;
     background: #000;
     border-radius: 1px;
 }
@@ -160,4 +161,33 @@ a{
 
 .archieve-link{
   color: var(--text);
+}
+
+/* gallery masonry (VSCO/Pinterest-like) */
+.gallery{
+  column-count:3;            /* at least 3 per row */
+  column-gap:12px;
+}
+
+/* Scale up to 4 and then 5 per row on wider screens */
+@media (min-width:560px){
+  .gallery{ column-count:4; }
+}
+@media (min-width:640px){
+  .gallery{ column-count:6; }
+}
+
+.gallery-item{
+  display:block;
+  break-inside:avoid;        /* prevent splitting items across columns */
+  margin:0 0 12px;
+  border-radius:10px;
+  overflow:hidden;
+  background:#111;           /* subtle placeholder while loading */
+}
+
+.gallery-item img{
+  display:block;
+  width:100%;                /* no fixed width/height; keep natural ratio */
+  height:auto;
 }

@@ -1,16 +1,16 @@
 
 :root{
-  --text: #ffffff;
-  --muted: #6b7280;
-  --link: #1EB980;
-  --border: rgb(255, 255, 255);
+  --text: #000000;
+  --muted: #5d626d;
+  --link: #0d2cf0;
+  --border: rgb(150, 149, 149);
   --maxw: 680px;
 }
 
 *{ box-sizing: border-box; }
 html,body{ 
   height:100%; 
-  background-color: black;
+  background-color: #ffffff;
 }
 
 body{
@@ -90,9 +90,15 @@ p{
   margin:14px 0;
 }
 
-a{ 
-  color:var(--link); 
-  text-decoration:none; 
+.bio-link{
+  color:var(--text); 
+  text-decoration:underline; 
+  text-underline-offset: 4px;
+}
+
+.project-link{
+  color:var(--text); 
+  text-decoration: none;
 }
 
 /* footer */
@@ -111,7 +117,8 @@ a{
 }
 
 /* timeline */
-.timeline{ margin-top:28px; }
+.timeline{ margin-top:18px; }
+
 .timeline h2{ color:var(--text); font-weight:600; margin:0 0 12px; }
 
 .timeline-list{
@@ -124,7 +131,7 @@ a{
   content:"";
   position:absolute;
   left:10px;
-  top:12px;
+  top:10px;
   bottom:-10px;
   width:1px;
   background:var(--border);
@@ -137,7 +144,7 @@ a{
     content: "";
     position: absolute;
     left: -15px;
-    top: -15px;
+    top: 10px;
     width: 3px;
     height: 36px;
     background: #000;

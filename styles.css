@@ -93,7 +93,7 @@ p{
 .bio-link{
   color:var(--text); 
   text-decoration:underline; 
-  text-underline-offset: 4px;
+  text-underline-offset: 2px;
 }
 
 .project-link{

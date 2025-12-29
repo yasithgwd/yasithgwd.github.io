@@ -2,7 +2,7 @@
 :root{
   --text: #000000;
   --muted: #5d626d;
-  --link: #26d06c;
+  --link: #6A7EFC;
   --border: rgb(150, 149, 149);
   --maxw: 680px;
 }
@@ -78,7 +78,7 @@ body{
   color:var(--muted);
 }
 .id-link{
-  color:var(--text);
+  color:var(--link);
   text-decoration:none;
 }
 .id-link:hover{ 
@@ -117,7 +117,7 @@ p{
 }
 
 /* timeline */
-.timeline{ margin-top:18px; }
+.timeline{ margin-top:18px}
 
 .timeline h2{ color:var(--text); font-weight:600; margin:0 0 12px; }
 

@@ -2,7 +2,7 @@
 :root{
   --text: #000000;
   --muted: #5d626d;
-  --link: #6A7EFC;
+  --link: #000000;
   --border: rgb(150, 149, 149);
   --maxw: 680px;
 }
